@@ -63,6 +63,46 @@ html {
   background: #B5B5B5;
 }
 
-.logo-card {
+.home-content-container {
   margin-top: 175px;
+  padding: 13%;
+}
+
+.logo-card {
+  display: grid;
+  grid-template-columns: 28fr 41fr;
+  gap: 2%;
+}
+
+.logo-card-text-container {
+  display: grid;
+  grid-template-columns: 100fr 27fr 27fr;
+  grid-template-areas:
+  "title1 title1 title1"
+  "title2 title2 title2"
+  "title3 title3 title3"
+  "title4 title4 title4"
+  "tagline button1 button2";
+}
+
+.logo-card-title {
+  text-transform: uppercase;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 90px;
+}
+
+#title1 {
+  grid-area: title1;
+}
+
+#title2 {
+  grid-area: title2;
+}
+
+#title3 {
+  grid-area: title3;
+}
+
+#title4 {
+  grid-area: title4;
 }
