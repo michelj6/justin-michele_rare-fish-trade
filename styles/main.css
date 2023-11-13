@@ -141,3 +141,14 @@ html {
   background-color: #2E97FF;
 }
 
+.cash-container {
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.cash-title {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 90px;
+  letter-spacing: -0.4px;
+}
