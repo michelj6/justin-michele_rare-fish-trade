@@ -3,12 +3,13 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px dotted red; */
+  outline: 1px dotted red;
 }
 
 *,
@@ -23,8 +24,8 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 175px;
-  padding: 50px;
+  height: 160px;
+  padding: 45px;
   border-bottom: 3px solid #252525;
   display: flex;
 }
@@ -47,7 +48,6 @@ html {
   align-items: center;
   border: 3px solid #252525;
   margin-right: -3px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 36px;
   color: #252525;
   text-decoration: none;
@@ -64,31 +64,37 @@ html {
 }
 
 .home-content-container {
-  margin-top: 175px;
-  padding: 13%;
+  margin-top: 160px;
+  height: 770px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-card {
   display: grid;
-  grid-template-columns: 28fr 41fr;
-  gap: 2%;
+  grid-template-columns: 504px 764px;
+  gap: 81px;
 }
 
 .logo-card-text-container {
   display: grid;
-  grid-template-columns: 100fr 27fr 27fr;
+  grid-template-columns: 450px 135px 135px;
   grid-template-areas:
   "title1 title1 title1"
   "title2 title2 title2"
   "title3 title3 title3"
   "title4 title4 title4"
   "tagline button1 button2";
+  column-gap: 22px;
 }
 
 .logo-card-title {
   text-transform: uppercase;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
   font-size: 90px;
+  letter-spacing: -0.4px;
+  margin-bottom: -20px;
 }
 
 #title1 {
@@ -105,4 +111,32 @@ html {
 
 #title4 {
   grid-area: title4;
+  margin-bottom: -20px;
+}
+
+.tagline {
+  padding-top: 5px;
+  grid-area: tagline;
+  font-size: 27px;
+}
+
+.btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #252525;
+  text-decoration: none;
+  border: 3px solid #252525;
+  border-radius: 15px 0px;
+  height: 47px;
+}
+
+.btn-link-primary {
+  background-color: #67E1C6;
+}
+
+.btn-link-secondary {
+  background-color: #2E97FF;
 }
