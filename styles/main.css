@@ -181,10 +181,8 @@ html {
   padding: 22px;
 }
 
-p {
+.card-info {
   font-size: 18px;
-  line-height: 1.25;
-  margin-bottom: 1.25em;
 }
 
 h3 {
@@ -199,4 +197,50 @@ h3 {
   padding: 0px 16px;
   align-items: center;
   border-top: 3px solid #252525;
+}
+
+.tutorial-content-container {
+  display: grid;
+  gap: 45px;
+  grid-template-columns: 1fr 1fr;
+  margin: 205px 45px 45px 45px;
+  padding: 45px;
+  border: 3px solid #252525;
+}
+
+h4 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+
+h5 {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 1.25em;
+}
+
+p {
+  font-size: 27px;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+
+.tutorial-graphic {
+  margin-bottom: 45px;
+}
+
+.tutorial-graphic-img {
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.group-btns {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
 }
