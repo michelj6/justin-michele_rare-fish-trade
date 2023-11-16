@@ -39,27 +39,29 @@
         </ul>
       </nav>
 
-      <!-- Page Title -->
-      <h4>Game Settings</h4>
+      <div class="settings-content-container">
+        <!-- Page Title -->
+        <h4>Game Settings</h4>
 
-      <!-- Settings Changers -->
-      <div class="setting-changer">
-        <p class="setting-body">
-          Timing: Market updates every
-          <span class="setting-input"> <input type="text" value="10" /> </span
-          >seconds.
-        </p>
-      </div>
-      <div class="setting-changer">
-        <p class="setting-body">
-          Price Shifts: Prices change by
-          <span> <input type="text" class="setting-input" value="$20" /> </span
-          >maximum every time the market updates.
-        </p>
-      </div>
+        <!-- Settings Changers -->
+        <div class="setting-changer">
+          <p>
+            Timing: Market updates every
+            <input class="setting-input" type="text" value="10" />
+            seconds.
+          </p>
+        </div>
+        <div class="setting-changer">
+          <p>
+            Price Shifts: Prices change by
+            <input class="setting-input" type="text" value="$20" />
+            maximum every time the market updates.
+          </p>
+        </div>
 
-      <!-- Restore Defaults -->
-      <button class="btn-primary">Restore Defaults</button>
+        <!-- Restore Defaults -->
+        <button class="btn btn-big btn-primary">Restore Defaults</button>
+      </div>
     </main>
   </body>
 </html>
