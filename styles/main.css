@@ -9,7 +9,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  /* outline: 1px dotted red; */
+  outline: 1px dotted red;
 }
 
 *,
@@ -243,4 +243,30 @@ figcaption {
   display: flex;
   flex-direction: row;
   gap: 18px;
+}
+
+.settings-content-container {
+  margin: 205px 45px 45px 45px;
+  padding: 45px;
+  border: 3px solid #252525;
+}
+
+.btn-big {
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.setting-input {
+  padding-right: 10px;
+  padding-right: 10px;
+  height: 70px;
+  width: 225px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 27px;
+  font-style: italic;
+  text-align: right;
+  text-decoration: underline;
+  border: 3px solid #252525;
+  background-color: #2e97ff;
 }
