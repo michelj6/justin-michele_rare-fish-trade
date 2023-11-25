@@ -9,7 +9,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  outline: 1px dotted red;
+  /* outline: 1px dotted red; */
 }
 
 *,
@@ -163,25 +163,28 @@ html {
   flex-flow: row wrap;
 }
 
-.collection-card {
+.card {
   border: 3px solid #252525;
-  margin-bottom: 22px;
 }
 
-.collection-card-img {
-  display: none;
+.collection-card {
+  margin-bottom: 45px;
+}
+
+.card-img {
+  /* display: none; */
   width: 486px;
   height: 243px;
 }
 
 .collection-card-body {
-  /* display: none; */
+  display: none;
   width: 486px;
   height: 243px;
   padding: 22px;
 }
 
-.card-info {
+.collection-card-info {
   font-size: 18px;
 }
 
@@ -190,7 +193,7 @@ h3 {
   font-weight: 400;
 }
 
-.collection-card-bar {
+.card-bar {
   display: flex;
   height: 65px;
   justify-content: space-between;
@@ -270,3 +273,16 @@ figcaption {
   border: 3px solid #252525;
   background-color: #2e97ff;
 }
+
+.results-cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.jumpTo {
+  position: absolute;
+  margin-top: -205px;
+}
+
+
