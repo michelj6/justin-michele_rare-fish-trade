@@ -19,289 +19,354 @@
       <nav class="menu-bar">
         <ul class="menu-bar-list">
           <li>
-            <a class="menu-link menu-link-home" href="index.html"
-              >Rare Fish Trade</a
-            >
-          </li>
-          <li><a class="menu-link menu-link-selected" href="#">Market</a></li>
-          <li><a class="menu-link" href="collection.html">Collection</a></li>
-          <li><a class="menu-link" href="tutorial.html">Tutorial</a></li>
-          <li>
-            <a class="menu-link" href="results.html"
-              ><img src="./images/search.svg" width="36" height="36"
-            /></a>
+            <a class="menu-link menu-link-home" href="index.html">Rare Fish Trade</a>
           </li>
           <li>
-            <a class="menu-link" href="settings.html"
-              ><img src="./images/settings.svg" width="36" height="36"
-            /></a>
+            <a class="menu-link menu-link-selected" href="#">Market</a>
+          </li>
+          <li>
+            <a class="menu-link" href="collection.html">Collection</a>
+          </li>
+          <li>
+            <a class="menu-link" href="tutorial.html">Tutorial</a>
+          </li>
+          <li>
+            <a class="menu-link" href="results.html">
+              <img src="./images/search.svg" width="36" height="36"/>
+            </a>
+          </li>
+          <li>
+            <a class="menu-link" href="settings.html">
+              <img src="./images/settings.svg" width="36" height="36"/>
+            </a>
           </li>
         </ul>
       </nav>
 
       <!-- Listing Cards -->
 
-      <!-- NEED JUMPTOS -->
+      <div class="market-content-container">
+        <div class="listings-container">
 
-      <!-- Arowana -->
-      <div class="listing-card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/640px-Bluefin-big.jpg"
-          width="300"
-          height="150"
-        />
-        <div class="listing-price">$100</div>
-        <div class="listing-change">+10</div>
-        <div class="listing-title-container">
-          <div>Arowana</div>
-          <button class="btn-primary">Buy/Sell</button>
-        </div>
-        <div class="listing-quantity-container">
-          <div>Quantity:</div>
-          <input type="text" class="quantity-input" value="5" />
-          <div>(minimum buy of 5)</div>
-        </div>
-        <div class="listing-purchase-container">
-          <div>x $100 = $500</div>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-secondary">Buy</button>
-        </div>
-      </div>
+          <!-- Arowana -->
+          <div class="card listing-card">
+            <span class="jumpTo" id="ArowanaMarket"></span>
+            <div class="listing-overview">
+              <img
+                class="listing-img"
+                src="./images/Arowana.svg"
+                width="270"
+                height="135"
+              />
+              <div class="listing-price">$100</div>
+              <div class="listing-change">+10</div>
+              <div class="listing-title">Arowana</div>
+              <div class="listing-btn-container">
+                <button class="btn btn-primary">Buy/Sell</button>
+              </div>
+            </div>
+            <div class="listing-more">
+              <div class="listing-prompt">Quantity:</div>
+              <input type="text" class="listing-input" value="5" />
+              <div class="listing-min-buy">(minimum buy of 5)</div>
+              <div class="listing-total">x $100 = $500</div>
+              <div class="listing-btn-container">
+                <div class="group-btns">
+                  <button class="btn btn-small btn-primary">Buy</button>
+                  <button class="btn btn-small btn-primary">Sell</button>
+                  <button class="btn btn-small btn-secondary">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Coelacanth -->
-      <div class="listing-card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/640px-Bluefin-big.jpg"
-          width="300"
-          height="150"
-        />
-        <div class="listing-price">$100</div>
-        <div class="listing-change">+10</div>
-        <div class="listing-title-container">
-          <div>Coelacanth</div>
-          <button class="btn-primary">Buy/Sell</button>
-        </div>
-        <div class="listing-quantity-container">
-          <div>Quantity:</div>
-          <input type="text" class="quantity-input" value="5" />
-          <div>(minimum buy of 5)</div>
-        </div>
-        <div class="listing-purchase-container">
-          <div>x $100 = $500</div>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-secondary">Buy</button>
-        </div>
-      </div>
+          <!-- Coelacanth -->
+          <div class="card listing-card">
+            <span class="jumpTo" id="CoelacanthMarket"></span>
+            <div class="listing-overview">
+              <img
+                class="listing-img"
+                src="./images/Coelacanth.svg"
+                width="270"
+                height="135"
+              />
+              <div class="listing-price">$100</div>
+              <div class="listing-change">+10</div>
+              <div class="listing-title">Coelacanth</div>
+              <div class="listing-btn-container">
+                <button class="btn btn-primary">Buy/Sell</button>
+              </div>
+            </div>
+            <div class="listing-more">
+              <div class="listing-prompt">Quantity:</div>
+              <input type="text" class="listing-input" value="5" />
+              <div class="listing-min-buy">(minimum buy of 5)</div>
+              <div class="listing-total">x $100 = $500</div>
+              <div class="listing-btn-container">
+                <div class="group-btns">
+                  <button class="btn btn-small btn-primary">Buy</button>
+                  <button class="btn btn-small btn-primary">Sell</button>
+                  <button class="btn btn-small btn-secondary">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Handfish -->
-      <div class="listing-card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/640px-Bluefin-big.jpg"
-          width="300"
-          height="150"
-        />
-        <div class="listing-price">$100</div>
-        <div class="listing-change">+10</div>
-        <div class="listing-title-container">
-          <div>Handfish</div>
-          <button class="btn-primary">Buy/Sell</button>
-        </div>
-        <div class="listing-quantity-container">
-          <div>Quantity:</div>
-          <input type="text" class="quantity-input" value="5" />
-          <div>(minimum buy of 5)</div>
-        </div>
-        <div class="listing-purchase-container">
-          <div>x $100 = $500</div>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-secondary">Buy</button>
-        </div>
-      </div>
+          <!-- Handfish -->
+          <div class="card listing-card">
+            <span class="jumpTo" id="HandfishMarket"></span>
+            <div class="listing-overview">
+              <img
+                class="listing-img"
+                src="./images/Handfish.svg"
+                width="270"
+                height="135"
+              />
+              <div class="listing-price">$100</div>
+              <div class="listing-change">+10</div>
+              <div class="listing-title">Handfish</div>
+              <div class="listing-btn-container">
+                <button class="btn btn-primary">Buy/Sell</button>
+              </div>
+            </div>
+            <div class="listing-more">
+              <div class="listing-prompt">Quantity:</div>
+              <input type="text" class="listing-input" value="5" />
+              <div class="listing-min-buy">(minimum buy of 5)</div>
+              <div class="listing-total">x $100 = $500</div>
+              <div class="listing-btn-container">
+                <div class="group-btns">
+                  <button class="btn btn-small btn-primary">Buy</button>
+                  <button class="btn btn-small btn-primary">Sell</button>
+                  <button class="btn btn-small btn-secondary">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Monkfish -->
-      <div class="listing-card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/640px-Bluefin-big.jpg"
-          width="300"
-          height="150"
-        />
-        <div class="listing-price">$100</div>
-        <div class="listing-change">+10</div>
-        <div class="listing-title-container">
-          <div>Monkfish</div>
-          <button class="btn-primary">Buy/Sell</button>
-        </div>
-        <div class="listing-quantity-container">
-          <div>Quantity:</div>
-          <input type="text" class="quantity-input" value="5" />
-          <div>(minimum buy of 5)</div>
-        </div>
-        <div class="listing-purchase-container">
-          <div>x $100 = $500</div>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-secondary">Buy</button>
-        </div>
-      </div>
+          <!-- Monkfish -->
+          <div class="card listing-card">
+            <span class="jumpTo" id="MonkfishMarket"></span>
+            <div class="listing-overview">
+              <img
+                class="listing-img"
+                src="./images/Monkfish.svg"
+                width="270"
+                height="135"
+              />
+              <div class="listing-price">$100</div>
+              <div class="listing-change">+10</div>
+              <div class="listing-title">Monkfish</div>
+              <div class="listing-btn-container">
+                <button class="btn btn-primary">Buy/Sell</button>
+              </div>
+            </div>
+            <div class="listing-more">
+              <div class="listing-prompt">Quantity:</div>
+              <input type="text" class="listing-input" value="5" />
+              <div class="listing-min-buy">(minimum buy of 5)</div>
+              <div class="listing-total">x $100 = $500</div>
+              <div class="listing-btn-container">
+                <div class="group-btns">
+                  <button class="btn btn-small btn-primary">Buy</button>
+                  <button class="btn btn-small btn-primary">Sell</button>
+                  <button class="btn btn-small btn-secondary">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Napoleonfish -->
-      <div class="listing-card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/640px-Bluefin-big.jpg"
-          width="300"
-          height="150"
-        />
-        <div class="listing-price">$100</div>
-        <div class="listing-change">+10</div>
-        <div class="listing-title-container">
-          <div>Napoleonfish</div>
-          <button class="btn-primary">Buy/Sell</button>
-        </div>
-        <div class="listing-quantity-container">
-          <div>Quantity:</div>
-          <input type="text" class="quantity-input" value="5" />
-          <div>(minimum buy of 5)</div>
-        </div>
-        <div class="listing-purchase-container">
-          <div>x $100 = $500</div>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-secondary">Buy</button>
-        </div>
-      </div>
+          <!-- Napoleonfish -->
+          <div class="card listing-card">
+            <span class="jumpTo" id="NapoleonfishMarket"></span>
+            <div class="listing-overview">
+              <img
+                class="listing-img"
+                src="./images/Napoleonfish.svg"
+                width="270"
+                height="135"
+              />
+              <div class="listing-price">$100</div>
+              <div class="listing-change">+10</div>
+              <div class="listing-title">Napoleonfish</div>
+              <div class="listing-btn-container">
+                <button class="btn btn-primary">Buy/Sell</button>
+              </div>
+            </div>
+            <div class="listing-more">
+              <div class="listing-prompt">Quantity:</div>
+              <input type="text" class="listing-input" value="5" />
+              <div class="listing-min-buy">(minimum buy of 5)</div>
+              <div class="listing-total">x $100 = $500</div>
+              <div class="listing-btn-container">
+                <div class="group-btns">
+                  <button class="btn btn-small btn-primary">Buy</button>
+                  <button class="btn btn-small btn-primary">Sell</button>
+                  <button class="btn btn-small btn-secondary">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Oarfish -->
-      <div class="listing-card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/640px-Bluefin-big.jpg"
-          width="300"
-          height="150"
-        />
-        <div class="listing-price">$100</div>
-        <div class="listing-change">+10</div>
-        <div class="listing-title-container">
-          <div>Oarfish</div>
-          <button class="btn-primary">Buy/Sell</button>
-        </div>
-        <div class="listing-quantity-container">
-          <div>Quantity:</div>
-          <input type="text" class="quantity-input" value="5" />
-          <div>(minimum buy of 5)</div>
-        </div>
-        <div class="listing-purchase-container">
-          <div>x $100 = $500</div>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-secondary">Buy</button>
-        </div>
-      </div>
+          <!-- Oarfish -->
+          <div class="card listing-card">
+            <span class="jumpTo" id="OarfishMarket"></span>
+            <div class="listing-overview">
+              <img
+                class="listing-img"
+                src="./images/Oarfish.svg"
+                width="270"
+                height="135"
+              />
+              <div class="listing-price">$100</div>
+              <div class="listing-change">+10</div>
+              <div class="listing-title">Oarfish</div>
+              <div class="listing-btn-container">
+                <button class="btn btn-primary">Buy/Sell</button>
+              </div>
+            </div>
+            <div class="listing-more">
+              <div class="listing-prompt">Quantity:</div>
+              <input type="text" class="listing-input" value="5" />
+              <div class="listing-min-buy">(minimum buy of 5)</div>
+              <div class="listing-total">x $100 = $500</div>
+              <div class="listing-btn-container">
+                <div class="group-btns">
+                  <button class="btn btn-small btn-primary">Buy</button>
+                  <button class="btn btn-small btn-primary">Sell</button>
+                  <button class="btn btn-small btn-secondary">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Sawfish -->
-      <div class="listing-card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/640px-Bluefin-big.jpg"
-          width="300"
-          height="150"
-        />
-        <div class="listing-price">$100</div>
-        <div class="listing-change">+10</div>
-        <div class="listing-title-container">
-          <div>Sawfish</div>
-          <button class="btn-primary">Buy/Sell</button>
-        </div>
-        <div class="listing-quantity-container">
-          <div>Quantity:</div>
-          <input type="text" class="quantity-input" value="5" />
-          <div>(minimum buy of 5)</div>
-        </div>
-        <div class="listing-purchase-container">
-          <div>x $100 = $500</div>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-secondary">Buy</button>
-        </div>
-      </div>
+          <!-- Sawfish -->
+          <div class="card listing-card">
+            <span class="jumpTo" id="SawfishMarket"></span>
+            <div class="listing-overview">
+              <img
+                class="listing-img"
+                src="./images/Sawfish.svg"
+                width="270"
+                height="135"
+              />
+              <div class="listing-price">$100</div>
+              <div class="listing-change">+10</div>
+              <div class="listing-title">Sawfish</div>
+              <div class="listing-btn-container">
+                <button class="btn btn-primary">Buy/Sell</button>
+              </div>
+            </div>
+            <div class="listing-more">
+              <div class="listing-prompt">Quantity:</div>
+              <input type="text" class="listing-input" value="5" />
+              <div class="listing-min-buy">(minimum buy of 5)</div>
+              <div class="listing-total">x $100 = $500</div>
+              <div class="listing-btn-container">
+                <div class="group-btns">
+                  <button class="btn btn-small btn-primary">Buy</button>
+                  <button class="btn btn-small btn-primary">Sell</button>
+                  <button class="btn btn-small btn-secondary">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Sockeye -->
-      <div class="listing-card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/640px-Bluefin-big.jpg"
-          width="300"
-          height="150"
-        />
-        <div class="listing-price">$100</div>
-        <div class="listing-change">+10</div>
-        <div class="listing-title-container">
-          <div>Sockeye</div>
-          <button class="btn-primary">Buy/Sell</button>
-        </div>
-        <div class="listing-quantity-container">
-          <div>Quantity:</div>
-          <input type="text" class="quantity-input" value="5" />
-          <div>(minimum buy of 5)</div>
-        </div>
-        <div class="listing-purchase-container">
-          <div>x $100 = $500</div>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-secondary">Buy</button>
-        </div>
-      </div>
+          <!-- Sockeye -->
+          <div class="card listing-card">
+            <span class="jumpTo" id="SockeyeMarket"></span>
+            <div class="listing-overview">
+              <img
+                class="listing-img"
+                src="./images/Sockeye.svg"
+                width="270"
+                height="135"
+              />
+              <div class="listing-price">$100</div>
+              <div class="listing-change">+10</div>
+              <div class="listing-title">Sockeye</div>
+              <div class="listing-btn-container">
+                <button class="btn btn-primary">Buy/Sell</button>
+              </div>
+            </div>
+            <div class="listing-more">
+              <div class="listing-prompt">Quantity:</div>
+              <input type="text" class="listing-input" value="5" />
+              <div class="listing-min-buy">(minimum buy of 5)</div>
+              <div class="listing-total">x $100 = $500</div>
+              <div class="listing-btn-container">
+                <div class="group-btns">
+                  <button class="btn btn-small btn-primary">Buy</button>
+                  <button class="btn btn-small btn-primary">Sell</button>
+                  <button class="btn btn-small btn-secondary">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Sturgeon -->
-      <div class="listing-card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/640px-Bluefin-big.jpg"
-          width="300"
-          height="150"
-        />
-        <div class="listing-price">$100</div>
-        <div class="listing-change">+10</div>
-        <div class="listing-title-container">
-          <div>Sturgeon</div>
-          <button class="btn-primary">Buy/Sell</button>
-        </div>
-        <div class="listing-quantity-container">
-          <div>Quantity:</div>
-          <input type="text" class="quantity-input" value="5" />
-          <div>(minimum buy of 5)</div>
-        </div>
-        <div class="listing-purchase-container">
-          <div>x $100 = $500</div>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-secondary">Buy</button>
-        </div>
-      </div>
+          <!-- Sturgeon -->
+          <div class="card listing-card">
+            <span class="jumpTo" id="SturgeonMarket"></span>
+            <div class="listing-overview">
+              <img
+                class="listing-img"
+                src="./images/Sturgeon.svg"
+                width="270"
+                height="135"
+              />
+              <div class="listing-price">$100</div>
+              <div class="listing-change">+10</div>
+              <div class="listing-title">Sturgeon</div>
+              <div class="listing-btn-container">
+                <button class="btn btn-primary">Buy/Sell</button>
+              </div>
+            </div>
+            <div class="listing-more">
+              <div class="listing-prompt">Quantity:</div>
+              <input type="text" class="listing-input" value="5" />
+              <div class="listing-min-buy">(minimum buy of 5)</div>
+              <div class="listing-total">x $100 = $500</div>
+              <div class="listing-btn-container">
+                <div class="group-btns">
+                  <button class="btn btn-small btn-primary">Buy</button>
+                  <button class="btn btn-small btn-primary">Sell</button>
+                  <button class="btn btn-small btn-secondary">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Tuna -->
-      <div class="listing-card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bluefin-big.jpg/640px-Bluefin-big.jpg"
-          width="300"
-          height="150"
-        />
-        <div class="listing-price">$100</div>
-        <div class="listing-change">+10</div>
-        <div class="listing-title-container">
-          <div>Tuna</div>
-          <button class="btn-primary">Buy/Sell</button>
-        </div>
-        <div class="listing-quantity-container">
-          <div>Quantity:</div>
-          <input type="text" class="quantity-input" value="5" />
-          <div>(minimum buy of 5)</div>
-        </div>
-        <div class="listing-purchase-container">
-          <div>x $100 = $500</div>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-primary">Buy</button>
-          <button class="btn-small-secondary">Buy</button>
-        </div>
-      </div>
+          <!-- Tuna -->
+          <div class="card listing-card">
+            <span class="jumpTo" id="TunaMarket"></span>
+            <div class="listing-overview">
+              <img
+                class="listing-img"
+                src="./images/Tuna.svg"
+                width="270"
+                height="135"
+              />
+              <div class="listing-price">$100</div>
+              <div class="listing-change">+10</div>
+              <div class="listing-title">Tuna</div>
+              <div class="listing-btn-container">
+                <button class="btn btn-primary">Buy/Sell</button>
+              </div>
+            </div>
+            <div class="listing-more">
+              <div class="listing-prompt">Quantity:</div>
+              <input type="text" class="listing-input" value="5" />
+              <div class="listing-min-buy">(minimum buy of 5)</div>
+              <div class="listing-total">x $100 = $500</div>
+              <div class="listing-btn-container">
+                <div class="group-btns">
+                  <button class="btn btn-small btn-primary">Buy</button>
+                  <button class="btn btn-small btn-primary">Sell</button>
+                  <button class="btn btn-small btn-secondary">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
       <!-- Graph... Chart.js? -->
       <img
