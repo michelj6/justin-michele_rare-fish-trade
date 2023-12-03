@@ -136,11 +136,11 @@ html {
 }
 
 .btn-primary {
-  background-color: #67e1c6;
+  background-color: #99EAD9;
 }
 
 .btn-secondary {
-  background-color: #2e97ff;
+  background-color: #5CADFF;
 }
 
 .cash-container {
@@ -271,7 +271,7 @@ figcaption {
   text-align: right;
   text-decoration: underline;
   border: 3px solid #252525;
-  background-color: #2e97ff;
+  background-color: #5CADFF;
 }
 
 .results-cards-container {
@@ -388,7 +388,7 @@ figcaption {
   text-decoration: underline;
   border: solid #252525;
   border-width: 0px 3px 3px 3px;
-  background-color: #2e97ff;
+  background-color: #5CADFF;
 }
 
 .listing-total {
