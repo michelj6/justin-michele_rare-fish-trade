@@ -10,7 +10,7 @@ html {
 * {
   margin: 0;
   padding: 0;
-  outline: 1px dotted red;
+  /* outline: 1px dotted red; */
 }
 
 *,
@@ -40,6 +40,21 @@ html {
 .menu-bar-list > li {
   flex: auto;
   display: flex;
+}
+
+.list-item-with-fin {
+  display: flex;
+  flex-direction: column;
+  margin-top: -28px;
+}
+
+.fish-head {
+  height: 100%;
+}
+
+.fish-fin {
+  height: 30px;
+  margin-bottom: -2px;
 }
 
 .menu-link {
@@ -124,10 +139,6 @@ h6 {
   font-weight: 400;
 }
 
-#start-btn {
-
-}
-
 .btn {
   width: 120px;
   height: 40px;
@@ -143,11 +154,11 @@ h6 {
 }
 
 .btn-primary {
-  background-color: #99EAD9;
+  background-color: #AAEEDF;
 }
 
 .btn-secondary {
-  background-color: #5CADFF;
+  background-color: #85C2FF;
 }
 
 .cash-container {
@@ -278,7 +289,11 @@ figcaption {
   text-align: right;
   text-decoration: underline;
   border: 3px solid #252525;
-  background-color: #5CADFF;
+  background-color: #85C2FF;
+}
+
+.more-margin-left {
+  margin-left: 3px;
 }
 
 .results-cards-container {
@@ -395,7 +410,7 @@ figcaption {
   text-decoration: underline;
   border: solid #252525;
   border-width: 0px 3px 3px 3px;
-  background-color: #5CADFF;
+  background-color: #85C2FF;
 }
 
 .listing-total {

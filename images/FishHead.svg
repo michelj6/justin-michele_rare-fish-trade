@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 79">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #252525;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #252525;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+        vector-effect: non-scaling-stroke;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-1" cx="37.68" cy="13.72" r="3.48"/>
+  <circle id="Ellipse_4" data-name="Ellipse 4" class="cls-1" cx="64.39" cy="24.61" r="3.48"/>
+  <path id="Path_11" data-name="Path 11" class="cls-2" d="m13.08,13.5l34.8,35.42L2.24,31.51c-2.24,42.88,80.03,45.99,80.03,45.99h25.73"/>
+  <path id="Path_12" data-name="Path 12" class="cls-2" d="m64.64,4.86c11.54-3.38,22.88-3.36,22.88-3.36h20.48"/>
+</svg>
