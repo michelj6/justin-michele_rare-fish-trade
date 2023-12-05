@@ -63,12 +63,27 @@ html {
   justify-content: center;
   align-items: center;
   border: 3px solid #252525;
+  outline-offset: -3px;
+  outline: 3px solid #252525;
   margin-right: -3px;
   font-size: 36px;
   color: #252525;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.2s ease-in-out,
+              background-color 0.3s ease-in-out;
 }
+
+.menu-link:hover {
+  outline-offset: -5px;
+  background-color: #DDDDDD;
+}
+
+.menu-link:active {
+  transition: all 0.05s;
+  background-color: #CCCCCC;
+}
+
 
 .menu-link-home {
   font-size: 45px;
@@ -76,7 +91,12 @@ html {
 }
 
 .menu-link-selected {
-  background: #b5b5b5;
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+}
+
+.menu-link-selected > img {
+  box-shadow: 0px 3px 0px #252525;
 }
 
 .home-content-container {
@@ -150,15 +170,64 @@ h6 {
   color: #252525;
   text-decoration: none;
   border: 3px solid #252525;
+  outline-offset: -3px;
+  outline: 3px solid #252525;
   border-radius: 15px 0px;
+  transition: all 0.2s ease-in-out,
+              background-color 0.3s ease-in-out;
+  box-shadow: 0px -14px 0px -5px #f2f2f2,
+              14px 0px 0px -5px #f2f2f2,
+              0px 14px 0px -5px #f2f2f2,
+              -14px 0px 0px -5px #f2f2f2;
+}
+
+.btn:hover {
+  outline-offset: -5px;
+  box-shadow: 0px -14px 0px -5px #f2f2f2,
+              14px 0px 0px -5px #f2f2f2,
+              0px 14px 0px -5px #f2f2f2,
+              -14px 0px 0px -5px #f2f2f2,
+              -10px 5px 0px -5px #252525,
+              10px -5px 0px -5px #252525,
+              -5px 10px 0px -5px #252525,
+              5px -10px 0px -5px #252525;
+}
+
+.btn:active {
+  transition: all 0.05s;
+  box-shadow: 0px -14px 0px -5px #f2f2f2,
+              14px 0px 0px -5px #f2f2f2,
+              0px 14px 0px -5px #f2f2f2,
+              -14px 0px 0px -5px #f2f2f2,
+              -13px 5px 0px -5px #252525,
+              13px -5px 0px -5px #252525,
+              -5px 13px 0px -5px #252525,
+              5px -13px 0px -5px #252525;
+
 }
 
 .btn-primary {
   background-color: #AAEEDF;
 }
 
+.btn-primary:hover {
+  background-color: #66E1C6;
+}
+
+.btn-primary:active {
+  background-color: #44DAB9;
+}
+
 .btn-secondary {
   background-color: #85C2FF;
+}
+
+.btn-secondary:hover {
+  background-color: #47A3FF;
+}
+
+.btn-secondary:active {
+  background-color: #1F8FFF;
 }
 
 .cash-container {
@@ -280,6 +349,7 @@ figcaption {
 }
 
 .setting-input {
+  margin: 0px 6px;
   padding-right: 10px;
   height: 70px;
   width: 225px;
@@ -289,11 +359,54 @@ figcaption {
   text-align: right;
   text-decoration: underline;
   border: 3px solid #252525;
+  outline-offset: -3px;
+  outline: 3px solid #252525;
+  box-shadow: 0px -14px 0px -5px #f2f2f2,
+              14px 0px 0px -5px #f2f2f2,
+              0px 16px 0px -5px #f2f2f2,
+              -16px 0px 0px -5px #f2f2f2;
   background-color: #85C2FF;
+  transition: all 0.2s ease-in-out,
+              background-color 0.3s ease-in-out;
 }
 
-.more-margin-left {
-  margin-left: 3px;
+.setting-input:hover {
+  outline-offset: -5px;
+  box-shadow: 0px -14px 0px -5px #f2f2f2,
+              14px 0px 0px -5px #f2f2f2,
+              0px 14px 0px -5px #f2f2f2,
+              -14px 0px 0px -5px #f2f2f2,
+              -10px -5px 0px -5px #252525,
+              -10px 5px 0px -5px #252525,
+              10px -5px 0px -5px #252525,
+              10px 5px 0px -5px #252525,
+              -5px -10px 0px -5px #252525,
+              -5px 10px 0px -5px #252525,
+              5px -10px 0px -5px #252525,
+              5px 10px 0px -5px #252525;
+  background-color: #47A3FF;
+}
+
+.setting-input:focus {
+  transition:all 0.05s;
+  outline-offset: -5px;
+  box-shadow: 0px -14px 0px -5px #f2f2f2,
+              14px 0px 0px -5px #f2f2f2,
+              0px 14px 0px -5px #f2f2f2,
+              -14px 0px 0px -5px #f2f2f2,
+              -13px -5px 0px -5px #252525,
+              -13px 5px 0px -5px #252525,
+              13px -5px 0px -5px #252525,
+              13px 5px 0px -5px #252525,
+              -5px -13px 0px -5px #252525,
+              -5px 13px 0px -5px #252525,
+              5px -13px 0px -5px #252525,
+              5px 13px 0px -5px #252525;
+  background-color: #1F8FFF;
+}
+
+.setting-more-margin-left {
+  margin-left: 9px;
 }
 
 .results-cards-container {
