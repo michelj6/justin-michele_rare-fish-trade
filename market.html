@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   </head>
   <body>
@@ -52,8 +53,8 @@
         <div class="listings-container">
 
           <!-- Arowana -->
-          <div class="card listing-card">
-            <span class="jumpTo" id="ArowanaMarket"></span>
+          <div class="card listing-card" id="ArowanaListingOverview">
+            <span class="jumpTo" id="ArowanaMarketJump"></span>
             <div class="listing-overview">
               <img
                 class="listing-img"
@@ -66,9 +67,11 @@
               <div class="listing-change">+10</div>
               <div class="listing-title">Arowana</div>
               <div class="listing-btn-container">
-                <button class="btn btn-primary">Buy/Sell</button>
+                <button class="btn btn-primary" onclick="switchView('ArowanaListingOverview', 'ArowanaListingMore')">Buy/Sell</button>
               </div>
             </div>
+          </div>
+          <div class="card listing-card" id="ArowanaListingMore" style="display: none;">
             <div class="listing-more">
               <div class="listing-prompt">Quantity:</div>
               <input type="text" class="listing-input" value="5" />
@@ -78,15 +81,16 @@
                 <div class="group-btns">
                   <button class="btn btn-small btn-primary">Buy</button>
                   <button class="btn btn-small btn-primary">Sell</button>
-                  <button class="btn btn-small btn-secondary">Back</button>
+                  <button class="btn btn-small btn-secondary" onclick="switchView('ArowanaListingMore', 'ArowanaListingOverview')">Back</button>
                 </div>
               </div>
             </div>
           </div>
 
+
           <!-- Coelacanth -->
-          <div class="card listing-card">
-            <span class="jumpTo" id="CoelacanthMarket"></span>
+          <div class="card listing-card" id="CoelacanthListingOverview">
+            <span class="jumpTo" id="CoelacanthMarketJump"></span>
             <div class="listing-overview">
               <img
                 class="listing-img"
@@ -99,9 +103,11 @@
               <div class="listing-change">+10</div>
               <div class="listing-title">Coelacanth</div>
               <div class="listing-btn-container">
-                <button class="btn btn-primary">Buy/Sell</button>
+                <button class="btn btn-primary" onclick="switchView('CoelacanthListingOverview', 'CoelacanthListingMore')">Buy/Sell</button>
               </div>
             </div>
+          </div>
+          <div class="card listing-card" id="CoelacanthListingMore" style="display: none;">
             <div class="listing-more">
               <div class="listing-prompt">Quantity:</div>
               <input type="text" class="listing-input" value="5" />
@@ -111,15 +117,15 @@
                 <div class="group-btns">
                   <button class="btn btn-small btn-primary">Buy</button>
                   <button class="btn btn-small btn-primary">Sell</button>
-                  <button class="btn btn-small btn-secondary">Back</button>
+                  <button class="btn btn-small btn-secondary" onclick="switchView('CoelacanthListingMore', 'CoelacanthListingOverview')">Back</button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Handfish -->
-          <div class="card listing-card">
-            <span class="jumpTo" id="HandfishMarket"></span>
+          <div class="card listing-card" id="HandfishListingOverview">
+            <span class="jumpTo" id="HandfishMarketJump"></span>
             <div class="listing-overview">
               <img
                 class="listing-img"
@@ -132,9 +138,11 @@
               <div class="listing-change">+10</div>
               <div class="listing-title">Handfish</div>
               <div class="listing-btn-container">
-                <button class="btn btn-primary">Buy/Sell</button>
+                <button class="btn btn-primary" onclick="switchView('HandfishListingOverview', 'HandfishListingMore')">Buy/Sell</button>
               </div>
             </div>
+          </div>
+          <div class="card listing-card" id="HandfishListingMore" style="display: none;">
             <div class="listing-more">
               <div class="listing-prompt">Quantity:</div>
               <input type="text" class="listing-input" value="5" />
@@ -144,15 +152,15 @@
                 <div class="group-btns">
                   <button class="btn btn-small btn-primary">Buy</button>
                   <button class="btn btn-small btn-primary">Sell</button>
-                  <button class="btn btn-small btn-secondary">Back</button>
+                  <button class="btn btn-small btn-secondary" onclick="switchView('HandfishListingMore', 'HandfishListingOverview')">Back</button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Monkfish -->
-          <div class="card listing-card">
-            <span class="jumpTo" id="MonkfishMarket"></span>
+          <div class="card listing-card" id="MonkfishListingOverview">
+            <span class="jumpTo" id="MonkfishMarketJump"></span>
             <div class="listing-overview">
               <img
                 class="listing-img"
@@ -165,9 +173,11 @@
               <div class="listing-change">+10</div>
               <div class="listing-title">Monkfish</div>
               <div class="listing-btn-container">
-                <button class="btn btn-primary">Buy/Sell</button>
+                <button class="btn btn-primary" onclick="switchView('MonkfishListingOverview', 'MonkfishListingMore')">Buy/Sell</button>
               </div>
             </div>
+          </div>
+          <div class="card listing-card" id="MonkfishListingMore" style="display: none;">
             <div class="listing-more">
               <div class="listing-prompt">Quantity:</div>
               <input type="text" class="listing-input" value="5" />
@@ -177,15 +187,15 @@
                 <div class="group-btns">
                   <button class="btn btn-small btn-primary">Buy</button>
                   <button class="btn btn-small btn-primary">Sell</button>
-                  <button class="btn btn-small btn-secondary">Back</button>
+                  <button class="btn btn-small btn-secondary" onclick="switchView('MonkfishListingMore', 'MonkfishListingOverview')">Back</button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Napoleonfish -->
-          <div class="card listing-card">
-            <span class="jumpTo" id="NapoleonfishMarket"></span>
+          <div class="card listing-card" id="NapoleonfishListingOverview">
+            <span class="jumpTo" id="NapoleonfishMarketJump"></span>
             <div class="listing-overview">
               <img
                 class="listing-img"
@@ -198,9 +208,11 @@
               <div class="listing-change">+10</div>
               <div class="listing-title">Napoleonfish</div>
               <div class="listing-btn-container">
-                <button class="btn btn-primary">Buy/Sell</button>
+                <button class="btn btn-primary" onclick="switchView('NapoleonfishListingOverview', 'NapoleonfishListingMore')">Buy/Sell</button>
               </div>
             </div>
+          </div>
+          <div class="card listing-card" id="NapoleonfishListingMore" style="display: none;">
             <div class="listing-more">
               <div class="listing-prompt">Quantity:</div>
               <input type="text" class="listing-input" value="5" />
@@ -210,15 +222,15 @@
                 <div class="group-btns">
                   <button class="btn btn-small btn-primary">Buy</button>
                   <button class="btn btn-small btn-primary">Sell</button>
-                  <button class="btn btn-small btn-secondary">Back</button>
+                  <button class="btn btn-small btn-secondary" onclick="switchView('NapoleonfishListingMore', 'NapoleonfishListingOverview')">Back</button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Oarfish -->
-          <div class="card listing-card">
-            <span class="jumpTo" id="OarfishMarket"></span>
+          <div class="card listing-card" id="OarfishListingOverview">
+            <span class="jumpTo" id="OarfishMarketJump"></span>
             <div class="listing-overview">
               <img
                 class="listing-img"
@@ -231,9 +243,11 @@
               <div class="listing-change">+10</div>
               <div class="listing-title">Oarfish</div>
               <div class="listing-btn-container">
-                <button class="btn btn-primary">Buy/Sell</button>
+                <button class="btn btn-primary" onclick="switchView('OarfishListingOverview', 'OarfishListingMore')">Buy/Sell</button>
               </div>
             </div>
+          </div>
+          <div class="card listing-card" id="OarfishListingMore" style="display: none;">
             <div class="listing-more">
               <div class="listing-prompt">Quantity:</div>
               <input type="text" class="listing-input" value="5" />
@@ -243,15 +257,15 @@
                 <div class="group-btns">
                   <button class="btn btn-small btn-primary">Buy</button>
                   <button class="btn btn-small btn-primary">Sell</button>
-                  <button class="btn btn-small btn-secondary">Back</button>
+                  <button class="btn btn-small btn-secondary" onclick="switchView('OarfishListingMore', 'OarfishListingOverview')">Back</button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Sawfish -->
-          <div class="card listing-card">
-            <span class="jumpTo" id="SawfishMarket"></span>
+          <div class="card listing-card" id="SawfishListingOverview">
+            <span class="jumpTo" id="SawfishMarketJump"></span>
             <div class="listing-overview">
               <img
                 class="listing-img"
@@ -264,9 +278,11 @@
               <div class="listing-change">+10</div>
               <div class="listing-title">Sawfish</div>
               <div class="listing-btn-container">
-                <button class="btn btn-primary">Buy/Sell</button>
+                <button class="btn btn-primary" onclick="switchView('SawfishListingOverview', 'SawfishListingMore')">Buy/Sell</button>
               </div>
             </div>
+          </div>
+          <div class="card listing-card" id="SawfishListingMore" style="display: none;">
             <div class="listing-more">
               <div class="listing-prompt">Quantity:</div>
               <input type="text" class="listing-input" value="5" />
@@ -276,15 +292,15 @@
                 <div class="group-btns">
                   <button class="btn btn-small btn-primary">Buy</button>
                   <button class="btn btn-small btn-primary">Sell</button>
-                  <button class="btn btn-small btn-secondary">Back</button>
+                  <button class="btn btn-small btn-secondary" onclick="switchView('SawfishListingMore','SawfishListingOverview')">Back</button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Sockeye -->
-          <div class="card listing-card">
-            <span class="jumpTo" id="SockeyeMarket"></span>
+          <div class="card listing-card" id="SockeyeListingOverview">
+            <span class="jumpTo" id="SockeyeMarketJump"></span>
             <div class="listing-overview">
               <img
                 class="listing-img"
@@ -297,9 +313,11 @@
               <div class="listing-change">+10</div>
               <div class="listing-title">Sockeye</div>
               <div class="listing-btn-container">
-                <button class="btn btn-primary">Buy/Sell</button>
+                <button class="btn btn-primary" onclick="switchView('SockeyeListingOverview', 'SockeyeListingMore')">Buy/Sell</button>
               </div>
             </div>
+          </div>
+          <div class="card listing-card" id="SockeyeListingMore" style="display: none;">
             <div class="listing-more">
               <div class="listing-prompt">Quantity:</div>
               <input type="text" class="listing-input" value="5" />
@@ -309,15 +327,15 @@
                 <div class="group-btns">
                   <button class="btn btn-small btn-primary">Buy</button>
                   <button class="btn btn-small btn-primary">Sell</button>
-                  <button class="btn btn-small btn-secondary">Back</button>
+                  <button class="btn btn-small btn-secondary" onclick="switchView('SockeyeListingMore', 'SockeyeListingOverview')">Back</button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Sturgeon -->
-          <div class="card listing-card">
-            <span class="jumpTo" id="SturgeonMarket"></span>
+          <div class="card listing-card" id="SturgeonListingOverview">
+            <span class="jumpTo" id="SturgeonMarketJump"></span>
             <div class="listing-overview">
               <img
                 class="listing-img"
@@ -330,9 +348,11 @@
               <div class="listing-change">+10</div>
               <div class="listing-title">Sturgeon</div>
               <div class="listing-btn-container">
-                <button class="btn btn-primary">Buy/Sell</button>
+                <button class="btn btn-primary" onclick="switchView('SturgeonListingOverview', 'SturgeonListingMore')">Buy/Sell</button>
               </div>
             </div>
+          </div>
+          <div class="card listing-card" id="SturgeonListingMore" style="display: none;">
             <div class="listing-more">
               <div class="listing-prompt">Quantity:</div>
               <input type="text" class="listing-input" value="5" />
@@ -342,15 +362,15 @@
                 <div class="group-btns">
                   <button class="btn btn-small btn-primary">Buy</button>
                   <button class="btn btn-small btn-primary">Sell</button>
-                  <button class="btn btn-small btn-secondary">Back</button>
+                  <button class="btn btn-small btn-secondary" onclick="switchView('SturgeonListingMore', 'SturgeonListingOverview')">Back</button>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Tuna -->
-          <div class="card listing-card">
-            <span class="jumpTo" id="TunaMarket"></span>
+          <div class="card listing-card" id="TunaListingOverview">
+            <span class="jumpTo" id="TunaMarketJump"></span>
             <div class="listing-overview">
               <img
                 class="listing-img"
@@ -363,9 +383,11 @@
               <div class="listing-change">+10</div>
               <div class="listing-title">Tuna</div>
               <div class="listing-btn-container">
-                <button class="btn btn-primary">Buy/Sell</button>
+                <button class="btn btn-primary" onclick="switchView('TunaListingOverview', 'TunaListingMore')">Buy/Sell</button>
               </div>
             </div>
+          </div>
+          <div class="card listing-card" id="TunaListingMore" style="display: none;">
             <div class="listing-more">
               <div class="listing-prompt">Quantity:</div>
               <input type="text" class="listing-input" value="5" />
@@ -375,7 +397,7 @@
                 <div class="group-btns">
                   <button class="btn btn-small btn-primary">Buy</button>
                   <button class="btn btn-small btn-primary">Sell</button>
-                  <button class="btn btn-small btn-secondary">Back</button>
+                  <button class="btn btn-small btn-secondary" onclick="switchView('TunaListingMore', 'TunaListingOverview')">Back</button>
                 </div>
               </div>
             </div>

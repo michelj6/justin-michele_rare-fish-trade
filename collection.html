@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   </head>
   <body>
@@ -55,8 +56,8 @@
       <!--Collection Cards-->
       <div class="collection-content-container">
         <!-- Arowana -->
-        <div class="card collection-card">
-          <span class="jumpTo" id="ArowanaCollection"></span>
+        <div class="card collection-card" id="ArowanaCollectionCardImg">
+          <span class="jumpTo" id="ArowanaCollectionJump"></span>
           <img
             class="card-img"
             src="./images/Arowana.svg"
@@ -64,6 +65,12 @@
             width="486"
             height="243"
           />
+          <div class="card-bar">
+            <h3>Arowana x1</h3>
+            <button class="btn btn-primary" onclick="switchView('ArowanaCollectionCardImg', 'ArowanaCollectionCardFacts')">Facts</button>
+          </div>
+        </div>
+        <div class="card collection-card" id="ArowanaCollectionCardFacts" style="display: none;">
           <div class="collection-card-body">
             <p class="collection-card-info">
               The arowana is an extremely aggressive fish. Full size arowanas
@@ -77,13 +84,13 @@
           </div>
           <div class="card-bar">
             <h3>Arowana x1</h3>
-            <button class="btn btn-primary">Facts</button>
+            <button class="btn btn-primary" onclick="switchView('ArowanaCollectionCardFacts', 'ArowanaCollectionCardImg')">Image</button>
           </div>
         </div>
 
         <!-- Coelacanth -->
-        <div class="card collection-card">
-          <span class="jumpTo" id="CoelacanthCollection"></span>
+        <div class="card collection-card" id="CoelacanthCollectionCardImg">
+          <span class="jumpTo" id="CoelacanthCollectionJump"></span>
           <img
             class="card-img"
             src="./images/Coelacanth.svg"
@@ -91,6 +98,12 @@
             width="486"
             height="243"
           />
+          <div class="card-bar">
+            <h3>Coelacanth x1</h3>
+            <button class="btn btn-primary" onclick="switchView('CoelacanthCollectionCardImg', 'CoelacanthCollectionCardFacts')">Facts</button>
+          </div>
+        </div>
+        <div class="card collection-card" id="CoelacanthCollectionCardFacts" style="display: none;">
           <div class="collection-card-body">
             <p class="collection-card-info">
               Found in 400 million year old fossils, the coelacanth was
@@ -106,13 +119,13 @@
           </div>
           <div class="card-bar">
             <h3>Coelacanth x1</h3>
-            <button class="btn btn-primary">Facts</button>
+            <button class="btn btn-primary" onclick="switchView('CoelacanthCollectionCardFacts', 'CoelacanthCollectionCardImg')">Image</button>
           </div>
         </div>
 
         <!-- Handfish -->
-        <div class="card collection-card">
-          <span class="jumpTo" id="HandfishCollection"></span>
+        <div class="card collection-card" id="HandfishCollectionCardImg">
+          <span class="jumpTo" id="HandfishCollectionJump"></span>
           <img
             class="card-img"
             src="./images/Handfish.svg"
@@ -120,6 +133,12 @@
             width="486"
             height="243"
           />
+          <div class="card-bar">
+            <h3>Handfish x1</h3>
+            <button class="btn btn-primary" onclick="switchView('HandfishCollectionCardImg', 'HandfishCollectionCardFacts')">Facts</button>
+          </div>
+        </div>
+        <div class="card collection-card" id="HandfishCollectionCardFacts" style="display: none;">
           <div class="collection-card-body">
             <p class="collection-card-info">
               The handfish doesn't usually swim. Instead, it sticks to shallow
@@ -135,13 +154,13 @@
           </div>
           <div class="card-bar">
             <h3>Handfish x1</h3>
-            <button class="btn btn-primary">Facts</button>
+            <button class="btn btn-primary" onclick="switchView('HandfishCollectionCardFacts', 'HandfishCollectionCardImg')">Image</button>
           </div>
         </div>
 
         <!-- Monkfish -->
-        <div class="card collection-card">
-          <span class="jumpTo" id="MonkfishCollection"></span>
+        <div class="card collection-card" id="MonkfishCollectionCardImg">
+          <span class="jumpTo" id="MonkfishCollectionJump"></span>
           <img
             class="card-img"
             src="./images/Monkfish.svg"
@@ -149,6 +168,12 @@
             width="486"
             height="243"
           />
+          <div class="card-bar">
+            <h3>Monkfish x1</h3>
+            <button class="btn btn-primary" onclick="switchView('MonkfishCollectionCardImg', 'MonkfishCollectionCardFacts')">Facts</button>
+          </div>
+        </div>
+        <div class="card collection-card" id="MonkfishCollectionCardFacts" style="display: none;">
           <div class="collection-card-body">
             <p class="collection-card-info">
               An expert in camouflage, the monkfish sits on the bottom of the
@@ -164,13 +189,13 @@
           </div>
           <div class="card-bar">
             <h3>Monkfish x1</h3>
-            <button class="btn btn-primary">Facts</button>
+            <button class="btn btn-primary" onclick="switchView('MonkfishCollectionCardFacts', 'MonkfishCollectionCardImg')">Image</button>
           </div>
         </div>
 
         <!-- Napoleonfish -->
-        <div class="card collection-card">
-          <span class="jumpTo" id="NapoleonfishCollection"></span>
+        <div class="card collection-card" id="NapoleonfishCollectionCardImg">
+          <span class="jumpTo" id="NapoleonfishCollectionJump"></span>
           <img
             class="card-img"
             src="./images/Napoleonfish.svg"
@@ -178,6 +203,12 @@
             width="486"
             height="243"
           />
+          <div class="card-bar">
+            <h3>Napoleonfish x1</h3>
+            <button class="btn btn-primary" onclick="switchView('NapoleonfishCollectionCardImg', 'NapoleonfishCollectionCardFacts')">Facts</button>
+          </div>
+        </div>
+        <div class="card collection-card" id="NapoleonfishCollectionCardFacts" style="display: none;">
           <div class="collection-card-body">
             <p class="collection-card-info">
               The napoleonfish is a smart predator which can work with other
@@ -192,19 +223,25 @@
           </div>
           <div class="card-bar">
             <h3>Napoleonfish x1</h3>
-            <button class="btn btn-primary">Facts</button>
+            <button class="btn btn-primary" onclick="switchView('NapoleonfishCollectionCardFacts', 'NapoleonfishCollectionCardImg')">Image</button>
           </div>
         </div>
 
         <!-- Oarfish -->
-        <div class="card collection-card">
-          <span class="jumpTo" id="OarfishCollection"></span>
+        <div class="card collection-card" id="OarfishCollectionCardImg">
+          <span class="jumpTo" id="OarfishCollectionJump"></span>
           <img
             class="card-img"
             src="./images/Oarfish.svg"
             alt="An oarfish"
             height="243"
           />
+          <div class="card-bar">
+            <h3>Oarfish x1</h3>
+            <button class="btn btn-primary" onclick="switchView('OarfishCollectionCardImg', 'OarfishCollectionCardFacts')">Facts</button>
+          </div>
+        </div>
+        <div class="card collection-card" id="OarfishCollectionCardFacts" style="display: none;">
           <div class="collection-card-body">
             <p class="collection-card-info">
               Live sightings of the oarfish are incredibly rare, since it lives
@@ -220,13 +257,13 @@
           </div>
           <div class="card-bar">
             <h3>Oarfish x1</h3>
-            <button class="btn btn-primary">Facts</button>
+            <button class="btn btn-primary" onclick="switchView('OarfishCollectionCardFacts', 'OarfishCollectionCardImg')">Image</button>
           </div>
         </div>
 
         <!-- Sawfish -->
-        <div class="card collection-card">
-          <span class="jumpTo" id="SawfishCollection"></span>
+        <div class="card collection-card" id="SawfishCollectionCardImg">
+          <span class="jumpTo" id="SawfishCollectionJump"></span>
           <img
             class="card-img"
             src="./images/Sawfish.svg"
@@ -234,6 +271,12 @@
             width="486"
             height="243"
           />
+          <div class="card-bar">
+            <h3>Sawfish x1</h3>
+            <button class="btn btn-primary" onclick="switchView('SawfishCollectionCardImg', 'SawfishCollectionCardFacts')">Facts</button>
+          </div>
+        </div>
+        <div class="card collection-card" id="SawfishCollectionCardFacts" style="display: none;">
           <div class="collection-card-body">
             <p class="collection-card-info">
               The sawfish uses its specialized snout to sense electric currents
@@ -248,13 +291,13 @@
           </div>
           <div class="card-bar">
             <h3>Sawfish x1</h3>
-            <button class="btn btn-primary">Facts</button>
+            <button class="btn btn-primary" onclick="switchView('SawfishCollectionCardFacts', 'SawfishCollectionCardImg')">Image</button>
           </div>
         </div>
 
         <!-- Sockeye -->
-        <div class="card collection-card">
-          <span class="jumpTo" id="SockeyeCollection"></span>
+        <div class="card collection-card" id="SockeyeCollectionCardImg">
+          <span class="jumpTo" id="SockeyeCollectionJump"></span>
           <img
             class="card-img"
             src="./images/Sockeye.svg"
@@ -262,6 +305,12 @@
             width="486"
             height="243"
           />
+          <div class="card-bar">
+            <h3>Sockeye x1</h3>
+            <button class="btn btn-primary" onclick="switchView('SockeyeCollectionCardImg', 'SockeyeCollectionCardFacts')">Facts</button>
+          </div>
+        </div>
+        <div class="card collection-card" id="SockeyeCollectionCardFacts" style="display: none;">
           <div class="collection-card-body">
             <p class="collection-card-info">
               The sockeye salmon varies in appearance depending on where it is
@@ -277,13 +326,13 @@
           </div>
           <div class="card-bar">
             <h3>Sockeye x1</h3>
-            <button class="btn btn-primary">Facts</button>
+            <button class="btn btn-primary" onclick="switchView('SockeyeCollectionCardFacts', 'SockeyeCollectionCardImg')">Image</button>
           </div>
         </div>
 
         <!-- Sturgeon -->
-        <div class="card collection-card">
-          <span class="jumpTo" id="SturgeonCollection"></span>
+        <div class="card collection-card" id="SturgeonCollectionCardImg">
+          <span class="jumpTo" id="SturgeonCollectionJump"></span>
           <img
             class="card-img"
             src="./images/Sturgeon.svg"
@@ -291,6 +340,12 @@
             width="486"
             height="243"
           />
+          <div class="card-bar">
+            <h3>Sturgeon x1</h3>
+            <button class="btn btn-primary" onclick="switchView('SturgeonCollectionCardImg','SturgeonCollectionCardFacts')">Facts</button>
+          </div>
+        </div>
+        <div class="card collection-card" id="SturgeonCollectionCardFacts" style="display: none;">
           <div class="collection-card-body">
             <p class="collection-card-info">
               The sturgeon is a very large, long-lived fish that can grow over
@@ -306,13 +361,13 @@
           </div>
           <div class="card-bar">
             <h3>Sturgeon x1</h3>
-            <button class="btn btn-primary">Facts</button>
+            <button class="btn btn-primary" onclick="switchView('SturgeonCollectionCardFacts','SturgeonCollectionCardImg')">Image</button>
           </div>
         </div>
 
         <!-- Tuna -->
-        <div class="card collection-card">
-          <span class="jumpTo" id="TunaCollection"></span>
+        <div class="card collection-card" id="TunaCollectionCardImg">
+          <span class="jumpTo" id="TunaCollectionJump"></span>
           <img
             class="card-img"
             src="./images/Tuna.svg"
@@ -320,6 +375,12 @@
             width="486"
             height="243"
           />
+          <div class="card-bar">
+            <h3>Tuna x1</h3>
+            <button class="btn btn-primary" onclick="switchView('TunaCollectionCardImg', 'TunaCollectionCardFacts')">Facts</button>
+          </div>
+        </div>
+        <div class="card collection-card" id="TunaCollectionCardFacts" style="display: none;">
           <div class="collection-card-body">
             <p class="collection-card-info">
               The tuna is one of the fastest fish, capable of swimming at speeds
@@ -335,7 +396,7 @@
           </div>
           <div class="card-bar">
             <h3>Tuna x1</h3>
-            <button class="btn btn-primary">Facts</button>
+            <button class="btn btn-primary" onclick="switchView('TunaCollectionCardFacts', 'TunaCollectionCardImg')">Image</button>
           </div>
         </div>
       </div>
