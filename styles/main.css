@@ -545,3 +545,18 @@ figcaption {
 .btn-small {
   width: 67px;
 }
+
+.market-graph {
+  position: fixed;
+  top: 205px;
+  left: 771px;
+}
+
+.puffer-w-background {
+  background-color: #f2f2f2;
+  width: 180px;
+  position: fixed;
+  top: 180px;
+  left: 1692px;
+  z-index: 1;
+}
